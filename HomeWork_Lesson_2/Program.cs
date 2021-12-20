@@ -16,23 +16,31 @@ namespace HomeWork_Lesson_2
 
             if (a > b)
             {
-               max = a;
-               Console.WriteLine("Max is " + max);
+                max = a;
+                Console.WriteLine("Max is " + max);
             }
             else
             {
-             if (a < b)
+                if (a < b)
                 {
                     max = b;
                     Console.WriteLine("Max is " + max);
                 }
-             else
+                else
                 {
                     Console.WriteLine("Digits are equal");
                 }
             }
             #endregion
-            
+
+            #region Task 2 Тернарный оператор
+            int num;
+            Console.WriteLine("Type digit ");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digit " + num + ((num % 2 == 0) ? " even number" : " odd number"));
+            #endregion
+
+
         }
     }
 }
