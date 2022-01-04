@@ -75,6 +75,31 @@ namespace HomeWork_Lesson_2
             Console.WriteLine(s);
             #endregion
 
+            #region Цикл While
+            int WhileDigit;
+            Console.WriteLine("Type a digit with five symbols");
+            WhileDigit = Convert.ToInt32(Console.ReadLine());
+            int count = 0;
+            while (WhileDigit != 0)
+            {
+                count++;
+                WhileDigit = WhileDigit / 10; //деление на 10 позволяет убрать один знак
+            }
+            Console.WriteLine("Amount of symbols " + count);
+            #endregion
+            #region Практика использования вложенного цикла
+            for (int ii = 0; ii <= 25; ii++)
+                for (int jj = 0; jj <= 30; jj++)
+                {
+                    Console.SetCursorPosition(ii, jj);
+                    Console.Write("***");
+                    System.Threading.Thread.Sleep(20);
+                    Console.Title = "ii=" + ii + " jj=" + jj;
+                }
+            Console.ReadKey();
+            #endregion
+
+
         }
     }
 }
