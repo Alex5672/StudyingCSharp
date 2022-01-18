@@ -5,7 +5,7 @@ namespace HomeWork_Lesson_2
     class Program
     {
         static void Main(string[] args)
-        {/*
+        {
             #region Task 1 Condition with three points
             int a, b, max;
             Console.WriteLine("Type two digits");
@@ -39,7 +39,7 @@ namespace HomeWork_Lesson_2
             num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Digit " + num + ((num % 2 == 0) ? " even number" : " odd number"));
             #endregion
-            */
+            
             #region Task 3 Оператор выбора "Switch"
             // Оператор switch предназначен для разветвления процесса выполнения программы
             int month;
@@ -88,17 +88,22 @@ namespace HomeWork_Lesson_2
             Console.WriteLine("Amount of symbols " + count);
             #endregion
             #region Практика использования вложенного цикла
-            for (int ii = 0; ii <= 25; ii++)
-                for (int jj = 0; jj <= 30; jj++)
+            /*for (int ii = 0; ii <= 10; ii++)
+                for (int jj = 0; jj <= 5; jj++)
                 {
                     Console.SetCursorPosition(ii, jj);
                     Console.Write("***");
                     System.Threading.Thread.Sleep(20);
                     Console.Title = "ii=" + ii + " jj=" + jj;
                 }
-            Console.ReadKey();
+            Console.ReadKey();*/
             #endregion
-
+            #region Структура для работы со временем DateTime
+            /*DateTime start = DateTime.Now;
+            System.Threading.Thread.Sleep(200);
+            DateTime finish = DateTime.Now;
+            Console.WriteLine(finish - start);*/
+            #endregion
 
         }
     }
